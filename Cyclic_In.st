@@ -1,0 +1,83 @@
+﻿    
+    sys_di[0].fail := NOT sys_mod[1].ok;
+    sys_di[1].fail := NOT sys_mod[1].ok;
+    sys_di[2].fail := NOT sys_mod[1].ok;
+    sys_di[3].fail := NOT sys_mod[1].ok;
+    sys_di[4].fail := NOT sys_mod[1].ok;
+    sys_di[5].fail := NOT sys_mod[1].ok;
+    sys_di[6].fail := NOT sys_mod[1].ok;
+    sys_di[7].fail := NOT sys_mod[1].ok;
+    sys_di[8].fail := NOT sys_mod[1].ok;
+    sys_di[9].fail := NOT sys_mod[1].ok;
+    sys_di[10].fail := NOT sys_mod[1].ok;
+    sys_di[11].fail := NOT sys_mod[1].ok;
+    sys_di[12].fail := NOT sys_mod[1].ok;
+    sys_di[13].fail := NOT sys_mod[1].ok;
+    sys_di[14].fail := NOT sys_mod[1].ok;
+    sys_di[15].fail := NOT sys_mod[1].ok;
+    sys_di[16].fail := NOT sys_mod[1].ok;
+    sys_di[17].fail := NOT sys_mod[1].ok;
+    sys_di[18].fail := NOT sys_mod[1].ok;
+    sys_di[19].fail := NOT sys_mod[1].ok;
+    sys_di[20].fail := NOT sys_mod[1].ok;
+    sys_di[21].fail := NOT sys_mod[1].ok;
+    sys_di[22].fail := NOT sys_mod[1].ok;
+    sys_di[23].fail := NOT sys_mod[1].ok;
+    sys_di[24].fail := NOT sys_mod[1].ok;
+    sys_di[25].fail := NOT sys_mod[1].ok;
+    sys_di[26].fail := NOT sys_mod[1].ok;
+    sys_di[27].fail := NOT sys_mod[1].ok;
+    sys_di[28].fail := NOT sys_mod[1].ok;
+    sys_di[29].fail := NOT sys_mod[1].ok;
+    sys_di[30].fail := NOT sys_mod[1].ok;
+    sys_di[31].fail := NOT sys_mod[1].ok;
+    sys_di[32].fail := NOT sys_mod[2].ok;
+    sys_di[33].fail := NOT sys_mod[2].ok;
+    sys_di[34].fail := NOT sys_mod[2].ok;
+    sys_di[35].fail := NOT sys_mod[2].ok;
+    sys_di[36].fail := NOT sys_mod[2].ok;
+    sys_di[37].fail := NOT sys_mod[2].ok;
+    sys_di[38].fail := NOT sys_mod[2].ok;
+    sys_di[39].fail := NOT sys_mod[2].ok;
+    sys_di[40].fail := NOT sys_mod[2].ok;
+    sys_di[41].fail := NOT sys_mod[2].ok;
+    sys_di[42].fail := NOT sys_mod[2].ok;
+    sys_di[43].fail := NOT sys_mod[2].ok;
+    sys_di[44].fail := NOT sys_mod[2].ok;
+    sys_di[45].fail := NOT sys_mod[2].ok;
+    sys_di[46].fail := NOT sys_mod[2].ok;
+    sys_di[47].fail := NOT sys_mod[2].ok;
+    
+    sys_ai[0].fail := NOT sys_mod[3].ok;
+    sys_ai[1].fail := NOT sys_mod[3].ok;
+    sys_ai[2].fail := NOT sys_mod[3].ok;
+    sys_ai[3].fail := NOT sys_mod[3].ok;
+    sys_ai[4].fail := NOT sys_mod[3].ok;
+    sys_ai[5].fail := NOT sys_mod[3].ok;
+    sys_ai[6].fail := NOT sys_mod[3].ok;
+    sys_ai[7].fail := NOT sys_mod[3].ok;
+    sys_ai[8].fail := NOT sys_mod[3].ok;
+    sys_ai[9].fail := NOT sys_mod[3].ok;
+    sys_ai[10].fail := NOT sys_mod[3].ok;
+    sys_ai[11].fail := NOT sys_mod[3].ok;
+    sys_ai[12].fail := NOT sys_mod[3].ok;
+    sys_ai[13].fail := NOT sys_mod[3].ok;
+    sys_ai[14].fail := NOT sys_mod[3].ok;
+    sys_ai[15].fail := NOT sys_mod[3].ok;
+    
+    sys_valve[0].in.di_dist := TRUE;
+    sys_valve[0].in.di_open := sys_di[0].ts;
+    sys_valve[0].in.di_close := sys_di[1].ts;
+    sys_valve[0].in.di_cv := TRUE;
+    sys_valve[0].in.sol_open := sys_di[2].ts;
+    sys_valve[0].in.sol_close := sys_di[3].ts;
+    sys_valve[1].in.di_dist := TRUE;
+    sys_valve[1].in.di_open := sys_di[0].ts;
+    sys_valve[1].in.di_close := sys_di[1].ts;
+    sys_valve[1].in.di_cv := TRUE;
+    sys_valve[1].in.sol_open := sys_di[2].ts;
+    sys_valve[1].in.sol_close := sys_di[3].ts;
+    
+    
+    
+    
