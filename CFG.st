@@ -30,8 +30,8 @@
     
     // Объем портов и устройств
     COUNT_PORT_ETH: UINT := 1;
-    COUNT_PORT_SERIAL: UINT := 2;
-    COUNT_DEVICE: UINT := 7;
+    COUNT_PORT_SERIAL: UINT := 7;
+    COUNT_DEVICE: UINT := 8;
     
     // Экстра объем БД (если промахнулись с первоначальной емкостью или для резервов)
     COUNT_EXTRA_TS: UINT := 32;
@@ -43,10 +43,10 @@
     // Объем БД для устройств (вычисленный)
     COUNT_DEVICE_TS: UINT := 167;
     COUNT_DEVICE_TE: UINT := 63;
-    COUNT_DEVICE_TF: UINT := 65;
+    COUNT_DEVICE_TF: UINT := 88;
     COUNT_DEVICE_CMD: UINT := 77;
     COUNT_DEVICE_NB: UINT := 0;
-    COUNT_DEVICE_NC: UINT := 7;
+    COUNT_DEVICE_NC: UINT := 11;
     
     // Предельные размеры
     MAX_COUNT_MODULES: UINT := 32;

@@ -4,178 +4,178 @@
 ;Source;;Source for time synchronization (1/2 - NTP/GPS);%IB148;Time synchronization
 ;Time new;;Time for synchronization;%ID38;Time synchronization
 ;Time old;;Time before synchronization;%ID39;Time synchronization
-;tx;;Count sended packets;%ID42;IO Modules
-;rx;;Count received packets;%ID43;IO Modules
-;rx_timeout;;Count not received packets;%ID44;IO Modules
-;rx_error;;Count received packets with error;%ID45;IO Modules
-;trans_error;;Received packets with unknown transaction number;%ID46;IO Modules
-;DI;;DI, groups 1,2,3,4;%IB188;A11
-;Group1;;DI group 1;%IB188;A11
-Application.sys_di[0].di;DI1;;Кран № 388.7 открыт;%IX188.0;A11
-Application.sys_di[1].di;DI2;;Кран № 388.7 закрыт;%IX188.1;A11
-Application.sys_di[2].di;DI3;;Контроль цепей Крана № 388.7 соленоид открытия;%IX188.2;A11
-Application.sys_di[3].di;DI4;;Контроль цепей Крана № 388.7 соленоид закрытия;%IX188.3;A11
-Application.sys_di[4].di;DI5;;Кран № 2 открыт (Резерв);%IX188.4;A11
-Application.sys_di[5].di;DI6;;Кран № 2 закрыт (Резерв);%IX188.5;A11
-Application.sys_di[6].di;DI7;;Контроль цепей крана 2 соленоид открытия (Резерв);%IX188.6;A11
-Application.sys_di[7].di;DI8;;Контроль цепей крана 2 соленоид закрытия (Резерв);%IX188.7;A11
-;Group2;;DI group 2;%IB189;A11
-Application.sys_di[8].di;DI9;;Шкаф КП ТМ открыт (инверсный);%IX189.0;A11
-Application.sys_di[9].di;DI10;;ТС Блок питания кранов (=24В/24В) в норме;%IX189.1;A11
-Application.sys_di[10].di;DI11;;Контроль изоляции цепей питания кранов (инверсный);%IX189.2;A11
-Application.sys_di[11].di;DI12;;Контроль изоляции цепей питания внутри шкафа (инверсный);%IX189.3;A11
-Application.sys_di[12].di;DI13;;Подготовка ТУ;%IX189.4;A11
-Application.sys_di[13].di;DI14;;Режим управления дистанционный;%IX189.5;A11
-Application.sys_di[14].di;DI15;;Режим проверки ламп;%IX189.6;A11
-Application.sys_di[15].di;DI16;;Резерв;%IX189.7;A11
-;Group3;;DI group 3;%IB190;A11
-Application.sys_di[16].di;DI17;;ИБП. Шкаф открыт (инверсный);%IX190.0;A11
-Application.sys_di[17].di;DI18;;ИБП. Работает система микроклимата (инверсный);%IX190.1;A11
-Application.sys_di[18].di;DI19;;ИБП. Сработал автоматический выключатель;%IX190.2;A11
-Application.sys_di[19].di;DI20;;ИБП. Наличие сетевого напряжения 220В;%IX190.3;A11
-Application.sys_di[20].di;DI21;;ИБП. Напряжение на АКБ ниже 20,5В;%IX190.4;A11
-Application.sys_di[21].di;DI22;;ИБП. Работает от АКБ;%IX190.5;A11
-Application.sys_di[22].di;DI23;;Резерв;%IX190.6;A11
-Application.sys_di[23].di;DI24;;ИБП. Защита по входу 220В исправна (резерв);%IX190.7;A11
-;Group4;;DI group 4;%IB191;A11
-Application.sys_di[24].di;DI25;;БКЭС. Активная энергия на вводе 0,4 кВ;%IX191.0;A11
-Application.sys_di[25].di;DI26;;БКЭС. Тревога в блок-боксе БКЭС;%IX191.1;A11
-Application.sys_di[26].di;DI27;;БКЭС. Наличие напряжения на вводе 0,4 кВ;%IX191.2;A11
-Application.sys_di[27].di;DI28;;БКЭС. Включен QF1;%IX191.3;A11
-Application.sys_di[28].di;DI29;;БКЭС. Неисправность  АУПС;%IX191.4;A11
-Application.sys_di[29].di;DI30;;БКЭС. Пожар в блок-боксе БКЭС;%IX191.5;A11
-Application.sys_di[30].di;DI31;;БКЭС. Выключатель нагрузки QS1 включен;%IX191.6;A11
-Application.sys_di[31].di;DI32;;БКЭС. Заземляющий нож выключатель нагрузки QS1 включен;%IX191.7;A11
-;counters;;Counters data;%ID48;A11
-;counters[1];;Counters data;%ID48;A11
-;counters[2];;Counters data;%ID49;A11
-;counters[3];;Counters data;%ID50;A11
-;counters[4];;Counters data;%ID51;A11
-;counters[5];;Counters data;%ID52;A11
-;counters[6];;Counters data;%ID53;A11
-;counters[7];;Counters data;%ID54;A11
-;counters[8];;Counters data;%ID55;A11
-;counters[9];;Counters data;%ID56;A11
-;counters[10];;Counters data;%ID57;A11
-;counters[11];;Counters data;%ID58;A11
-;counters[12];;Counters data;%ID59;A11
-;counters[13];;Counters data;%ID60;A11
-;counters[14];;Counters data;%ID61;A11
-;counters[15];;Counters data;%ID62;A11
-;counters[16];;Counters data;%ID63;A11
-;counters[17];;Counters data;%ID64;A11
-;counters[18];;Counters data;%ID65;A11
-;counters[19];;Counters data;%ID66;A11
-;counters[20];;Counters data;%ID67;A11
-;counters[21];;Counters data;%ID68;A11
-;counters[22];;Counters data;%ID69;A11
-;counters[23];;Counters data;%ID70;A11
-;counters[24];;Counters data;%ID71;A11
-;counters[25];;Counters data;%ID72;A11
-;counters[26];;Counters data;%ID73;A11
-;counters[27];;Counters data;%ID74;A11
-;counters[28];;Counters data;%ID75;A11
-;counters[29];;Counters data;%ID76;A11
-;counters[30];;Counters data;%ID77;A11
-;counters[31];;Counters data;%ID78;A11
-;counters[32];;Counters data;%ID79;A11
-Application.sys_mod[1].ok;online;;Online status;%IX320.0;A11
-;tx;;Count sended packets;%ID81;A11
-;rx;;Count received packets;%ID82;A11
-;rx_timeout;;Count not received packets;%ID83;A11
-;rx_error;;Count received packets with error;%ID84;A11
-;trans_error;;Received packets with unknown transaction number;%ID85;A11
-;type;;Module type;%ID86;A11
-;Service;;Service info;%ID87;A11
-;Diagnostic;;;%IW174;A11
-;Lights;;Indication LED's init error;%IX348.0;A11
-;Database;;Internal parameters database init error;%IX348.1;A11
-;USART;;USART interface init error;%IX348.2;A11
-;Flash;;External flash memory chip init error;%IX348.3;A11
-;USB;;USB interface init error;%IX348.4;A11
-;Bus address;;Module bus address init error;%IX348.5;A11
-;Reserved;;;%IX348.6;A11
-;Reserved@1;;;%IX348.7;A11
-;Reserved@2;;;%IX349.0;A11
-;Reserved@3;;;%IX349.1;A11
-;Reserved@4;;;%IX349.2;A11
-;Reserved@5;;;%IX349.3;A11
-;Reserved@6;;;%IX349.4;A11
-;Reserved@7;;;%IX349.5;A11
-;Reserved@8;;;%IX349.6;A11
-;Reserved@9;;;%IX349.7;A11
-;Module  specific;;;%IB350;A11
-;DI group1 error;;DI group1 driver hardware error;%IX350.0;A11
-;DI group2 error;;DI group2 driver hardware error;%IX350.1;A11
-;DI group3 error;;DI group3 driver hardware error;%IX350.2;A11
-;DI group4 error;;DI group4 driver hardware error;%IX350.3;A11
-;Reserved@10;;;%IX350.4;A11
-;Reserved@11;;;%IX350.5;A11
-;Reserved@12;;;%IX350.6;A11
-;Reserved@13;;;%IX350.7;A11
-;Unique id;;;%IB351;A11
-;Unique id[id];;;%IB351;A11
-;Unique id[id]@1;;;%IB352;A11
-;Unique id[id]@2;;;%IB353;A11
-;Unique id[id]@3;;;%IB354;A11
-;Unique id[id]@4;;;%IB355;A11
-;Unique id[id]@5;;;%IB356;A11
-;Unique id[id]@6;;;%IB357;A11
-;Unique id[id]@7;;;%IB358;A11
-;Unique id[id]@8;;;%IB359;A11
-;Unique id[id]@9;;;%IB360;A11
-;Unique id[id]@10;;;%IB361;A11
-;Unique id[id]@11;;;%IB362;A11
-;VNAR;;;%IB363;A11
-;VNAR[VNAR];;;%IB363;A11
-;VNAR[VNAR]@1;;;%IB364;A11
-;VNAR[VNAR]@2;;;%IB365;A11
-;VNAR[VNAR]@3;;;%IB366;A11
-;VNAR[VNAR]@4;;;%IB367;A11
-;VNAR[VNAR]@5;;;%IB368;A11
-;VNAR[VNAR]@6;;;%IB369;A11
-;VNAR[VNAR]@7;;;%IB370;A11
-;VNAR[VNAR]@8;;;%IB371;A11
-;VNAR[VNAR]@9;;;%IB372;A11
-;VNAR[VNAR]@10;;;%IB373;A11
-;VNAR[VNAR]@11;;;%IB374;A11
-;VNAR[VNAR]@12;;;%IB375;A11
-;VNAR[VNAR]@13;;;%IB376;A11
-;VNAR[VNAR]@14;;;%IB377;A11
-;VNAR[VNAR]@15;;;%IB378;A11
-;Module type;;;%ID95;A11
-;CRC of code;;;%IB384;A11
-;Byte0;;;%IB384;A11
-;Byte1;;;%IB385;A11
-;Byte2;;;%IB386;A11
-;Byte3;;;%IB387;A11
-;Soft version;;;%IB388;A11
-;Byte0@1;;;%IB388;A11
-;Byte1@1;;;%IB389;A11
-;Backline line1;;Backline line1 diagnostic;%ID98;A11
-;data rx;;Backline diagnostic info: rx counter;%ID98;A11
-;good packets;;Backline diagnostic info: good packets counter;%ID99;A11
-;bad packets;;Backline diagnostic info: bad packets counter;%ID100;A11
-;replies;;Backline diagnostic info: replies counter;%ID101;A11
-;denials;;Backline diagnostic info: denials counter;%ID102;A11
-;repeats;;Backline diagnostic info: repeats counter;%ID103;A11
-;RESERVED;;reserved;%ID104;A11
-;fail size;;Backline diagnostic info: packet size fails counter;%ID105;A11
-;fail frame;;Backline diagnostic info: packet frame fails counter;%ID106;A11
-;fail crc;;Backline diagnostic info: packet crc fails counter;%ID107;A11
-;fail UART;;Backline diagnostic info: UART fails counter;%ID108;A11
-;Backline line2;;Backline line2 diagnostic;%ID109;A11
-;data rx@1;;Backline diagnostic info: rx counter;%ID109;A11
-;good packets@1;;Backline diagnostic info: good packets counter;%ID110;A11
-;bad packets@1;;Backline diagnostic info: bad packets counter;%ID111;A11
-;replies@1;;Backline diagnostic info: replies counter;%ID112;A11
-;denials@1;;Backline diagnostic info: denials counter;%ID113;A11
-;repeats@1;;Backline diagnostic info: repeats counter;%ID114;A11
-;RESERVED@1;;reserved;%ID115;A11
-;fail size@1;;Backline diagnostic info: packet size fails counter;%ID116;A11
-;fail frame@1;;Backline diagnostic info: packet frame fails counter;%ID117;A11
-;fail crc@1;;Backline diagnostic info: packet crc fails counter;%ID118;A11
-;fail UART@1;;Backline diagnostic info: UART fails counter;%ID119;A11
+;tx;;Count sended packets;%ID48;IO Modules
+;rx;;Count received packets;%ID49;IO Modules
+;rx_timeout;;Count not received packets;%ID50;IO Modules
+;rx_error;;Count received packets with error;%ID51;IO Modules
+;trans_error;;Received packets with unknown transaction number;%ID52;IO Modules
+;DI;;DI, groups 1,2,3,4;%IB212;A11
+;Group1;;DI group 1;%IB212;A11
+Application.sys_di[0].di;DI1;;Кран № 388.7 открыт;%IX212.0;A11
+Application.sys_di[1].di;DI2;;Кран № 388.7 закрыт;%IX212.1;A11
+Application.sys_di[2].di;DI3;;Контроль цепей Крана № 388.7 соленоид открытия;%IX212.2;A11
+Application.sys_di[3].di;DI4;;Контроль цепей Крана № 388.7 соленоид закрытия;%IX212.3;A11
+Application.sys_di[4].di;DI5;;Кран № 2 открыт (Резерв);%IX212.4;A11
+Application.sys_di[5].di;DI6;;Кран № 2 закрыт (Резерв);%IX212.5;A11
+Application.sys_di[6].di;DI7;;Контроль цепей крана 2 соленоид открытия (Резерв);%IX212.6;A11
+Application.sys_di[7].di;DI8;;Контроль цепей крана 2 соленоид закрытия (Резерв);%IX212.7;A11
+;Group2;;DI group 2;%IB213;A11
+Application.sys_di[8].di;DI9;;Шкаф КП ТМ открыт (инверсный);%IX213.0;A11
+Application.sys_di[9].di;DI10;;ТС Блок питания кранов (=24В/24В) в норме;%IX213.1;A11
+Application.sys_di[10].di;DI11;;Контроль изоляции цепей питания кранов (инверсный);%IX213.2;A11
+Application.sys_di[11].di;DI12;;Контроль изоляции цепей питания внутри шкафа (инверсный);%IX213.3;A11
+Application.sys_di[12].di;DI13;;Подготовка ТУ;%IX213.4;A11
+Application.sys_di[13].di;DI14;;Режим управления дистанционный;%IX213.5;A11
+Application.sys_di[14].di;DI15;;Режим проверки ламп;%IX213.6;A11
+Application.sys_di[15].di;DI16;;Резерв;%IX213.7;A11
+;Group3;;DI group 3;%IB214;A11
+Application.sys_di[16].di;DI17;;ИБП. Шкаф открыт (инверсный);%IX214.0;A11
+Application.sys_di[17].di;DI18;;ИБП. Работает система микроклимата (инверсный);%IX214.1;A11
+Application.sys_di[18].di;DI19;;ИБП. Сработал автоматический выключатель;%IX214.2;A11
+Application.sys_di[19].di;DI20;;ИБП. Наличие сетевого напряжения 220В;%IX214.3;A11
+Application.sys_di[20].di;DI21;;ИБП. Напряжение на АКБ ниже 20,5В;%IX214.4;A11
+Application.sys_di[21].di;DI22;;ИБП. Работает от АКБ;%IX214.5;A11
+Application.sys_di[22].di;DI23;;Резерв;%IX214.6;A11
+Application.sys_di[23].di;DI24;;ИБП. Защита по входу 220В исправна (резерв);%IX214.7;A11
+;Group4;;DI group 4;%IB215;A11
+Application.sys_di[24].di;DI25;;БКЭС. Активная энергия на вводе 0,4 кВ;%IX215.0;A11
+Application.sys_di[25].di;DI26;;БКЭС. Тревога в блок-боксе БКЭС;%IX215.1;A11
+Application.sys_di[26].di;DI27;;БКЭС. Наличие напряжения на вводе 0,4 кВ;%IX215.2;A11
+Application.sys_di[27].di;DI28;;БКЭС. Включен QF1;%IX215.3;A11
+Application.sys_di[28].di;DI29;;БКЭС. Неисправность  АУПС;%IX215.4;A11
+Application.sys_di[29].di;DI30;;БКЭС. Пожар в блок-боксе БКЭС;%IX215.5;A11
+Application.sys_di[30].di;DI31;;БКЭС. Выключатель нагрузки QS1 включен;%IX215.6;A11
+Application.sys_di[31].di;DI32;;БКЭС. Заземляющий нож выключатель нагрузки QS1 включен;%IX215.7;A11
+;counters;;Counters data;%ID54;A11
+;counters[1];;Counters data;%ID54;A11
+;counters[2];;Counters data;%ID55;A11
+;counters[3];;Counters data;%ID56;A11
+;counters[4];;Counters data;%ID57;A11
+;counters[5];;Counters data;%ID58;A11
+;counters[6];;Counters data;%ID59;A11
+;counters[7];;Counters data;%ID60;A11
+;counters[8];;Counters data;%ID61;A11
+;counters[9];;Counters data;%ID62;A11
+;counters[10];;Counters data;%ID63;A11
+;counters[11];;Counters data;%ID64;A11
+;counters[12];;Counters data;%ID65;A11
+;counters[13];;Counters data;%ID66;A11
+;counters[14];;Counters data;%ID67;A11
+;counters[15];;Counters data;%ID68;A11
+;counters[16];;Counters data;%ID69;A11
+;counters[17];;Counters data;%ID70;A11
+;counters[18];;Counters data;%ID71;A11
+;counters[19];;Counters data;%ID72;A11
+;counters[20];;Counters data;%ID73;A11
+;counters[21];;Counters data;%ID74;A11
+;counters[22];;Counters data;%ID75;A11
+;counters[23];;Counters data;%ID76;A11
+;counters[24];;Counters data;%ID77;A11
+;counters[25];;Counters data;%ID78;A11
+;counters[26];;Counters data;%ID79;A11
+;counters[27];;Counters data;%ID80;A11
+;counters[28];;Counters data;%ID81;A11
+;counters[29];;Counters data;%ID82;A11
+;counters[30];;Counters data;%ID83;A11
+;counters[31];;Counters data;%ID84;A11
+;counters[32];;Counters data;%ID85;A11
+Application.sys_mod[1].ok;online;;Online status;%IX344.0;A11
+;tx;;Count sended packets;%ID87;A11
+;rx;;Count received packets;%ID88;A11
+;rx_timeout;;Count not received packets;%ID89;A11
+;rx_error;;Count received packets with error;%ID90;A11
+;trans_error;;Received packets with unknown transaction number;%ID91;A11
+;type;;Module type;%ID92;A11
+;Service;;Service info;%ID93;A11
+;Diagnostic;;;%IW186;A11
+;Lights;;Indication LED's init error;%IX372.0;A11
+;Database;;Internal parameters database init error;%IX372.1;A11
+;USART;;USART interface init error;%IX372.2;A11
+;Flash;;External flash memory chip init error;%IX372.3;A11
+;USB;;USB interface init error;%IX372.4;A11
+;Bus address;;Module bus address init error;%IX372.5;A11
+;Reserved;;;%IX372.6;A11
+;Reserved@1;;;%IX372.7;A11
+;Reserved@2;;;%IX373.0;A11
+;Reserved@3;;;%IX373.1;A11
+;Reserved@4;;;%IX373.2;A11
+;Reserved@5;;;%IX373.3;A11
+;Reserved@6;;;%IX373.4;A11
+;Reserved@7;;;%IX373.5;A11
+;Reserved@8;;;%IX373.6;A11
+;Reserved@9;;;%IX373.7;A11
+;Module  specific;;;%IB374;A11
+;DI group1 error;;DI group1 driver hardware error;%IX374.0;A11
+;DI group2 error;;DI group2 driver hardware error;%IX374.1;A11
+;DI group3 error;;DI group3 driver hardware error;%IX374.2;A11
+;DI group4 error;;DI group4 driver hardware error;%IX374.3;A11
+;Reserved@10;;;%IX374.4;A11
+;Reserved@11;;;%IX374.5;A11
+;Reserved@12;;;%IX374.6;A11
+;Reserved@13;;;%IX374.7;A11
+;Unique id;;;%IB375;A11
+;Unique id[id];;;%IB375;A11
+;Unique id[id]@1;;;%IB376;A11
+;Unique id[id]@2;;;%IB377;A11
+;Unique id[id]@3;;;%IB378;A11
+;Unique id[id]@4;;;%IB379;A11
+;Unique id[id]@5;;;%IB380;A11
+;Unique id[id]@6;;;%IB381;A11
+;Unique id[id]@7;;;%IB382;A11
+;Unique id[id]@8;;;%IB383;A11
+;Unique id[id]@9;;;%IB384;A11
+;Unique id[id]@10;;;%IB385;A11
+;Unique id[id]@11;;;%IB386;A11
+;VNAR;;;%IB387;A11
+;VNAR[VNAR];;;%IB387;A11
+;VNAR[VNAR]@1;;;%IB388;A11
+;VNAR[VNAR]@2;;;%IB389;A11
+;VNAR[VNAR]@3;;;%IB390;A11
+;VNAR[VNAR]@4;;;%IB391;A11
+;VNAR[VNAR]@5;;;%IB392;A11
+;VNAR[VNAR]@6;;;%IB393;A11
+;VNAR[VNAR]@7;;;%IB394;A11
+;VNAR[VNAR]@8;;;%IB395;A11
+;VNAR[VNAR]@9;;;%IB396;A11
+;VNAR[VNAR]@10;;;%IB397;A11
+;VNAR[VNAR]@11;;;%IB398;A11
+;VNAR[VNAR]@12;;;%IB399;A11
+;VNAR[VNAR]@13;;;%IB400;A11
+;VNAR[VNAR]@14;;;%IB401;A11
+;VNAR[VNAR]@15;;;%IB402;A11
+;Module type;;;%ID101;A11
+;CRC of code;;;%IB408;A11
+;Byte0;;;%IB408;A11
+;Byte1;;;%IB409;A11
+;Byte2;;;%IB410;A11
+;Byte3;;;%IB411;A11
+;Soft version;;;%IB412;A11
+;Byte0@1;;;%IB412;A11
+;Byte1@1;;;%IB413;A11
+;Backline line1;;Backline line1 diagnostic;%ID104;A11
+;data rx;;Backline diagnostic info: rx counter;%ID104;A11
+;good packets;;Backline diagnostic info: good packets counter;%ID105;A11
+;bad packets;;Backline diagnostic info: bad packets counter;%ID106;A11
+;replies;;Backline diagnostic info: replies counter;%ID107;A11
+;denials;;Backline diagnostic info: denials counter;%ID108;A11
+;repeats;;Backline diagnostic info: repeats counter;%ID109;A11
+;RESERVED;;reserved;%ID110;A11
+;fail size;;Backline diagnostic info: packet size fails counter;%ID111;A11
+;fail frame;;Backline diagnostic info: packet frame fails counter;%ID112;A11
+;fail crc;;Backline diagnostic info: packet crc fails counter;%ID113;A11
+;fail UART;;Backline diagnostic info: UART fails counter;%ID114;A11
+;Backline line2;;Backline line2 diagnostic;%ID115;A11
+;data rx@1;;Backline diagnostic info: rx counter;%ID115;A11
+;good packets@1;;Backline diagnostic info: good packets counter;%ID116;A11
+;bad packets@1;;Backline diagnostic info: bad packets counter;%ID117;A11
+;replies@1;;Backline diagnostic info: replies counter;%ID118;A11
+;denials@1;;Backline diagnostic info: denials counter;%ID119;A11
+;repeats@1;;Backline diagnostic info: repeats counter;%ID120;A11
+;RESERVED@1;;reserved;%ID121;A11
+;fail size@1;;Backline diagnostic info: packet size fails counter;%ID122;A11
+;fail frame@1;;Backline diagnostic info: packet frame fails counter;%ID123;A11
+;fail crc@1;;Backline diagnostic info: packet crc fails counter;%ID124;A11
+;fail UART@1;;Backline diagnostic info: UART fails counter;%ID125;A11
 ;DO;;DO groups 1,2;%QB0;A12
 ;Group1;;DO group 1;%QB0;A12
 Application.sys_do[0].outDO;DO1;;Кран № 388.7 открыть;%QX0.0;A12
@@ -195,326 +195,326 @@ Application.sys_do[12].outDO;DO13;;Резерв;%QX1.4;A12
 Application.sys_do[13].outDO;DO14;;Резерв;%QX1.5;A12
 Application.sys_do[14].outDO;DO15;;Резерв;%QX1.6;A12
 Application.sys_do[15].outDO;DO16;;Резерв;%QX1.7;A12
-;DI;;DI groups 1,2;%IB480;A12
-;Group1@1;;DI group 1;%IB480;A12
-Application.sys_di[32].di;DI1;;Тревога на площадке крана 388.7;%IX480.0;A12
-Application.sys_di[33].di;DI2;;Тревога в блок-боксе КП ТМ;%IX480.1;A12
-Application.sys_di[34].di;DI3;;Авария источника питания охранной сигнализации;%IX480.2;A12
-Application.sys_di[35].di;DI4;;Резерв;%IX480.3;A12
-Application.sys_di[36].di;DI5;;Резерв;%IX480.4;A12
-Application.sys_di[37].di;DI6;;Резерв;%IX480.5;A12
-Application.sys_di[38].di;DI7;;Резерв;%IX480.6;A12
-Application.sys_di[39].di;DI8;;Резерв;%IX480.7;A12
-;Group2@1;;DI group 2;%IB481;A12
-Application.sys_di[40].di;DI9;;Резерв;%IX481.0;A12
-Application.sys_di[41].di;DI10;;Резерв;%IX481.1;A12
-Application.sys_di[42].di;DI11;;Резерв;%IX481.2;A12
-Application.sys_di[43].di;DI12;;Резерв;%IX481.3;A12
-Application.sys_di[44].di;DI13;;Резерв;%IX481.4;A12
-Application.sys_di[45].di;DI14;;Резерв;%IX481.5;A12
-Application.sys_di[46].di;DI15;;Резерв;%IX481.6;A12
-Application.sys_di[47].di;DI16;;Резерв;%IX481.7;A12
-;BI;;Back indication groups 1,2;%IB482;A12
-;Group1@2;;Back indication group 1;%IB482;A12
-;DI1@1;;Unused;%IX482.0;A12
-;DI2@1;;Unused;%IX482.1;A12
-;DI3@1;;Unused;%IX482.2;A12
-;DI4@1;;Unused;%IX482.3;A12
-;DI5@1;;Unused;%IX482.4;A12
-;DI6@1;;Unused;%IX482.5;A12
-;DI7@1;;Unused;%IX482.6;A12
-;DI8@1;;Unused;%IX482.7;A12
-;Group2@2;;Back indication group 2;%IB483;A12
-;DI9@1;;Unused;%IX483.0;A12
-;DI10@1;;Unused;%IX483.1;A12
-;DI11@1;;Unused;%IX483.2;A12
-;DI12@1;;Unused;%IX483.3;A12
-;DI13@1;;Unused;%IX483.4;A12
-;DI14@1;;Unused;%IX483.5;A12
-;DI15@1;;Unused;%IX483.6;A12
-;DI16@1;;Unused;%IX483.7;A12
-;counters;;Counters data;%ID121;A12
-;counters[1];;Counters data;%ID121;A12
-;counters[2];;Counters data;%ID122;A12
-;counters[3];;Counters data;%ID123;A12
-;counters[4];;Counters data;%ID124;A12
-;counters[5];;Counters data;%ID125;A12
-;counters[6];;Counters data;%ID126;A12
-;counters[7];;Counters data;%ID127;A12
-;counters[8];;Counters data;%ID128;A12
-;counters[9];;Counters data;%ID129;A12
-;counters[10];;Counters data;%ID130;A12
-;counters[11];;Counters data;%ID131;A12
-;counters[12];;Counters data;%ID132;A12
-;counters[13];;Counters data;%ID133;A12
-;counters[14];;Counters data;%ID134;A12
-;counters[15];;Counters data;%ID135;A12
-;counters[16];;Counters data;%ID136;A12
-;DO_bi_err;;Back indication error, groups 1,2;%IB548;A12
-;Group1@3;;BI group 1;%IB548;A12
-Application.sys_do[0].fb_err;Bit0;;Кран № 388.7 открыть;%IX548.0;A12
-Application.sys_do[1].fb_err;Bit1;;Кран № 388.7 закрыть;%IX548.1;A12
-Application.sys_do[2].fb_err;Bit2;;Кран № 2 открыть (Резерв);%IX548.2;A12
-Application.sys_do[3].fb_err;Bit3;;Кран № 2 закрыть (Резерв);%IX548.3;A12
-Application.sys_do[4].fb_err;Bit4;;Резерв;%IX548.4;A12
-Application.sys_do[5].fb_err;Bit5;;Резерв;%IX548.5;A12
-Application.sys_do[6].fb_err;Bit6;;Резерв;%IX548.6;A12
-Application.sys_do[7].fb_err;Bit7;;Подготовка ТУ;%IX548.7;A12
-;Group2@3;;BI group 2;%IB549;A12
-Application.sys_do[8].fb_err;Bit0@1;;Резерв;%IX549.0;A12
-Application.sys_do[9].fb_err;Bit1@1;;Резерв;%IX549.1;A12
-Application.sys_do[10].fb_err;Bit2@1;;Резерв;%IX549.2;A12
-Application.sys_do[11].fb_err;Bit3@1;;Резерв;%IX549.3;A12
-Application.sys_do[12].fb_err;Bit4@1;;Резерв;%IX549.4;A12
-Application.sys_do[13].fb_err;Bit5@1;;Резерв;%IX549.5;A12
-Application.sys_do[14].fb_err;Bit6@1;;Резерв;%IX549.6;A12
-Application.sys_do[15].fb_err;Bit7@1;;Резерв;%IX549.7;A12
-Application.sys_mod[2].ok;online;;Online status;%IX550.0;A12
-;tx;;Count sended packets;%ID138;A12
-;rx;;Count received packets;%ID139;A12
-;rx_timeout;;Count not received packets;%ID140;A12
-;rx_error;;Count received packets with error;%ID141;A12
-;trans_error;;Received packets with unknown transaction number;%ID142;A12
-;type;;Module type;%ID143;A12
-;Service;;Service info;%ID144;A12
-;Diagnostic;;;%IW288;A12
-;Lights;;Indication LED's init error;%IX576.0;A12
-;Database;;Internal parameters database init error;%IX576.1;A12
-;USART;;USART interface init error;%IX576.2;A12
-;Flash;;External flash memory chip init error;%IX576.3;A12
-;USB;;USB interface init error;%IX576.4;A12
-;Bus address;;Module bus address init error;%IX576.5;A12
-;Reserved;;;%IX576.6;A12
-;Reserved@1;;;%IX576.7;A12
-;Reserved@2;;;%IX577.0;A12
-;Reserved@3;;;%IX577.1;A12
-;Reserved@4;;;%IX577.2;A12
-;Reserved@5;;;%IX577.3;A12
-;Reserved@6;;;%IX577.4;A12
-;Reserved@7;;;%IX577.5;A12
-;Reserved@8;;;%IX577.6;A12
-;Reserved@9;;;%IX577.7;A12
-;Module  specific;;;%IB578;A12
-;DO group 1 error;;DO group 1 hardware error;%IX578.0;A12
-;DO group 2 error;;DO group 2 hardware error;%IX578.1;A12
-;Reserved@10;;;%IX578.2;A12
-;Reserved@11;;;%IX578.3;A12
-;Groups 1,2 supply fail;;Groups 1,2 (DO1-DO16) has no supply voltage;%IX578.4;A12
-;Reserved@12;;;%IX578.5;A12
-;Reserved@13;;;%IX578.6;A12
-;Reserved@14;;;%IX578.7;A12
-;Unique id;;;%IB579;A12
-;Unique id[id];;;%IB579;A12
-;Unique id[id]@1;;;%IB580;A12
-;Unique id[id]@2;;;%IB581;A12
-;Unique id[id]@3;;;%IB582;A12
-;Unique id[id]@4;;;%IB583;A12
-;Unique id[id]@5;;;%IB584;A12
-;Unique id[id]@6;;;%IB585;A12
-;Unique id[id]@7;;;%IB586;A12
-;Unique id[id]@8;;;%IB587;A12
-;Unique id[id]@9;;;%IB588;A12
-;Unique id[id]@10;;;%IB589;A12
-;Unique id[id]@11;;;%IB590;A12
-;VNAR;;;%IB591;A12
-;VNAR[VNAR];;;%IB591;A12
-;VNAR[VNAR]@1;;;%IB592;A12
-;VNAR[VNAR]@2;;;%IB593;A12
-;VNAR[VNAR]@3;;;%IB594;A12
-;VNAR[VNAR]@4;;;%IB595;A12
-;VNAR[VNAR]@5;;;%IB596;A12
-;VNAR[VNAR]@6;;;%IB597;A12
-;VNAR[VNAR]@7;;;%IB598;A12
-;VNAR[VNAR]@8;;;%IB599;A12
-;VNAR[VNAR]@9;;;%IB600;A12
-;VNAR[VNAR]@10;;;%IB601;A12
-;VNAR[VNAR]@11;;;%IB602;A12
-;VNAR[VNAR]@12;;;%IB603;A12
-;VNAR[VNAR]@13;;;%IB604;A12
-;VNAR[VNAR]@14;;;%IB605;A12
-;VNAR[VNAR]@15;;;%IB606;A12
-;Module type;;;%ID152;A12
-;CRC of code;;;%IB612;A12
-;Byte0;;;%IB612;A12
-;Byte1;;;%IB613;A12
-;Byte2;;;%IB614;A12
-;Byte3;;;%IB615;A12
-;Soft version;;;%IB616;A12
-;Byte0@1;;;%IB616;A12
-;Byte1@1;;;%IB617;A12
-;Backline line1;;Backline line1 diagnostic;%ID155;A12
-;data rx;;Backline diagnostic info: rx counter;%ID155;A12
-;good packets;;Backline diagnostic info: good packets counter;%ID156;A12
-;bad packets;;Backline diagnostic info: bad packets counter;%ID157;A12
-;replies;;Backline diagnostic info: replies counter;%ID158;A12
-;denials;;Backline diagnostic info: denials counter;%ID159;A12
-;repeats;;Backline diagnostic info: repeats counter;%ID160;A12
-;RESERVED;;reserved;%ID161;A12
-;fail size;;Backline diagnostic info: packet size fails counter;%ID162;A12
-;fail frame;;Backline diagnostic info: packet frame fails counter;%ID163;A12
-;fail crc;;Backline diagnostic info: packet crc fails counter;%ID164;A12
-;fail UART;;Backline diagnostic info: UART fails counter;%ID165;A12
-;Backline line2;;Backline line2 diagnostic;%ID166;A12
-;data rx@1;;Backline diagnostic info: rx counter;%ID166;A12
-;good packets@1;;Backline diagnostic info: good packets counter;%ID167;A12
-;bad packets@1;;Backline diagnostic info: bad packets counter;%ID168;A12
-;replies@1;;Backline diagnostic info: replies counter;%ID169;A12
-;denials@1;;Backline diagnostic info: denials counter;%ID170;A12
-;repeats@1;;Backline diagnostic info: repeats counter;%ID171;A12
-;RESERVED@1;;reserved;%ID172;A12
-;fail size@1;;Backline diagnostic info: packet size fails counter;%ID173;A12
-;fail frame@1;;Backline diagnostic info: packet frame fails counter;%ID174;A12
-;fail crc@1;;Backline diagnostic info: packet crc fails counter;%ID175;A12
-;fail UART@1;;Backline diagnostic info: UART fails counter;%ID176;A12
-;AI;;Array of 16 AI signals;%IW354;A13
-Application.sys_ai[0].ai;AI[1];;Напряжение сетевого питания 220В;%IW354;A13
-Application.sys_ai[1].ai;AI[2];;Напряжение аккумуляторной батареи =24В;%IW355;A13
-Application.sys_ai[2].ai;AI[3];;Резерв;%IW356;A13
-Application.sys_ai[3].ai;AI[4];;Резерв;%IW357;A13
-Application.sys_ai[4].ai;AI[5];;Резерв;%IW358;A13
-Application.sys_ai[5].ai;AI[6];;Резерв;%IW359;A13
-Application.sys_ai[6].ai;AI[7];;Резерв;%IW360;A13
-Application.sys_ai[7].ai;AI[8];;Резерв;%IW361;A13
-Application.sys_ai[8].ai;AI[9];;Температура газа после крана № 388.7;%IW362;A13
-Application.sys_ai[9].ai;AI[10];;Температура грунта;%IW363;A13
-Application.sys_ai[10].ai;AI[11];;Давление газа до крана № 388.7;%IW364;A13
-Application.sys_ai[11].ai;AI[12];;Давление газа после крана № 388.7;%IW365;A13
-Application.sys_ai[12].ai;AI[13];;Давление газа в аккумуляторе импульчного газа;%IW366;A13
-Application.sys_ai[13].ai;AI[14];;Температура воздуха в блок-боксе КП ТМ;%IW367;A13
-Application.sys_ai[14].ai;AI[15];;Температура наружнего воздуха;%IW368;A13
-Application.sys_ai[15].ai;AI[16];;Резерв;%IW369;A13
-;AI_temp;;Device temperature;%IW370;A13
-;AI_calib;;Calibration state;%IB742;A13
-;Group1;;Calibration state of AI group 1 channels;%IB742;A13
-;Channel 1;;Напряжение сетевого питания 220В;%IX742.0;A13
-;Channel 2;;Напряжение аккумуляторной батареи =24В;%IX742.1;A13
-;Channel 3;;Резерв;%IX742.2;A13
-;Channel 4;;Резерв;%IX742.3;A13
-;Channel 5;;Резерв;%IX742.4;A13
-;Channel 6;;Резерв;%IX742.5;A13
-;Channel 7;;Резерв;%IX742.6;A13
-;Channel 8;;Резерв;%IX742.7;A13
-;Group2;;Calibration state of AI group 2 channels;%IB743;A13
-;Channel 9;;Температура газа после крана № 388.7;%IX743.0;A13
-;Channel 10;;Температура грунта;%IX743.1;A13
-;Channel 11;;Давление газа до крана № 388.7;%IX743.2;A13
-;Channel 12;;Давление газа после крана № 388.7;%IX743.3;A13
-;Channel 13;;Давление газа в аккумуляторе импульчного газа;%IX743.4;A13
-;Channel 14;;Температура воздуха в блок-боксе КП ТМ;%IX743.5;A13
-;Channel 15;;Температура наружнего воздуха;%IX743.6;A13
-;Channel 16;;Резерв;%IX743.7;A13
-;Reserved;;Reserved;%IB744;A13
-;Channel 17;;Unused;%IX744.0;A13
-;Channel 18;;Unused;%IX744.1;A13
-;Channel 19;;Unused;%IX744.2;A13
-;Channel 20;;Unused;%IX744.3;A13
-;Channel 21;;Unused;%IX744.4;A13
-;Channel 22;;Unused;%IX744.5;A13
-;Channel 23;;Unused;%IX744.6;A13
-;Channel 24;;Unused;%IX744.7;A13
-;Reserved@1;;Reserved;%IB745;A13
-;Channel 25;;Unused;%IX745.0;A13
-;Channel 26;;Unused;%IX745.1;A13
-;Channel 27;;Unused;%IX745.2;A13
-;Channel 28;;Unused;%IX745.3;A13
-;Channel 29;;Unused;%IX745.4;A13
-;Channel 30;;Unused;%IX745.5;A13
-;Channel 31;;Unused;%IX745.6;A13
-;Channel 32;;Unused;%IX745.7;A13
-Application.sys_mod[3].ok;online;;Online status;%IX746.0;A13
-;tx;;Count sended packets;%ID187;A13
-;rx;;Count received packets;%ID188;A13
-;rx_timeout;;Count not received packets;%ID189;A13
-;rx_error;;Count received packets with error;%ID190;A13
-;trans_error;;Received packets with unknown transaction number;%ID191;A13
-;type;;Module type;%ID192;A13
-;Service;;Service info;%ID193;A13
-;Diagnostic;;;%IW386;A13
-;Lights;;Indication LED's init error;%IX772.0;A13
-;Database;;Internal parameters database init error;%IX772.1;A13
-;USART;;USART interface init error;%IX772.2;A13
-;Flash;;External flash memory chip init error;%IX772.3;A13
-;USB;;USB interface init error;%IX772.4;A13
-;Bus address;;Module bus address init error;%IX772.5;A13
-;Reserved@2;;;%IX772.6;A13
-;Reserved@3;;;%IX772.7;A13
-;Reserved@4;;;%IX773.0;A13
-;Reserved@5;;;%IX773.1;A13
-;Reserved@6;;;%IX773.2;A13
-;Reserved@7;;;%IX773.3;A13
-;Reserved@8;;;%IX773.4;A13
-;Reserved@9;;;%IX773.5;A13
-;Reserved@10;;;%IX773.6;A13
-;Reserved@11;;;%IX773.7;A13
-;Module  specific;;;%IB774;A13
-;Service mode on;;Service mode flag;%IX774.0;A13
-;ADC1 error;;ADC1 init fault;%IX774.1;A13
-;ADC2 error;;ADC2 init fault;%IX774.2;A13
-;ADC3 error;;ADC3 init fault;%IX774.3;A13
-;ADC4 error;;ADC4 init fault;%IX774.4;A13
-;Calib error;;Calibration error: wrong calibration coefficients;%IX774.5;A13
-;Group error;;Group error: wrong group resistors;%IX774.6;A13
-;Reserved@12;;;%IX774.7;A13
-;Unique id;;;%IB775;A13
-;Unique id[id];;;%IB775;A13
-;Unique id[id]@1;;;%IB776;A13
-;Unique id[id]@2;;;%IB777;A13
-;Unique id[id]@3;;;%IB778;A13
-;Unique id[id]@4;;;%IB779;A13
-;Unique id[id]@5;;;%IB780;A13
-;Unique id[id]@6;;;%IB781;A13
-;Unique id[id]@7;;;%IB782;A13
-;Unique id[id]@8;;;%IB783;A13
-;Unique id[id]@9;;;%IB784;A13
-;Unique id[id]@10;;;%IB785;A13
-;Unique id[id]@11;;;%IB786;A13
-;VNAR;;;%IB787;A13
-;VNAR[VNAR];;;%IB787;A13
-;VNAR[VNAR]@1;;;%IB788;A13
-;VNAR[VNAR]@2;;;%IB789;A13
-;VNAR[VNAR]@3;;;%IB790;A13
-;VNAR[VNAR]@4;;;%IB791;A13
-;VNAR[VNAR]@5;;;%IB792;A13
-;VNAR[VNAR]@6;;;%IB793;A13
-;VNAR[VNAR]@7;;;%IB794;A13
-;VNAR[VNAR]@8;;;%IB795;A13
-;VNAR[VNAR]@9;;;%IB796;A13
-;VNAR[VNAR]@10;;;%IB797;A13
-;VNAR[VNAR]@11;;;%IB798;A13
-;VNAR[VNAR]@12;;;%IB799;A13
-;VNAR[VNAR]@13;;;%IB800;A13
-;VNAR[VNAR]@14;;;%IB801;A13
-;VNAR[VNAR]@15;;;%IB802;A13
-;Module type;;;%ID201;A13
-;CRC of code;;;%IB808;A13
-;Byte0;;;%IB808;A13
-;Byte1;;;%IB809;A13
-;Byte2;;;%IB810;A13
-;Byte3;;;%IB811;A13
-;Soft version;;;%IB812;A13
-;Byte0@1;;;%IB812;A13
-;Byte1@1;;;%IB813;A13
-;Backline line1;;Backline line1 diagnostic;%ID204;A13
-;data rx;;Backline diagnostic info: rx counter;%ID204;A13
-;good packets;;Backline diagnostic info: good packets counter;%ID205;A13
-;bad packets;;Backline diagnostic info: bad packets counter;%ID206;A13
-;replies;;Backline diagnostic info: replies counter;%ID207;A13
-;denials;;Backline diagnostic info: denials counter;%ID208;A13
-;repeats;;Backline diagnostic info: repeats counter;%ID209;A13
-;RESERVED;;reserved;%ID210;A13
-;fail size;;Backline diagnostic info: packet size fails counter;%ID211;A13
-;fail frame;;Backline diagnostic info: packet frame fails counter;%ID212;A13
-;fail crc;;Backline diagnostic info: packet crc fails counter;%ID213;A13
-;fail UART;;Backline diagnostic info: UART fails counter;%ID214;A13
-;Backline line2;;Backline line2 diagnostic;%ID215;A13
-;data rx@1;;Backline diagnostic info: rx counter;%ID215;A13
-;good packets@1;;Backline diagnostic info: good packets counter;%ID216;A13
-;bad packets@1;;Backline diagnostic info: bad packets counter;%ID217;A13
-;replies@1;;Backline diagnostic info: replies counter;%ID218;A13
-;denials@1;;Backline diagnostic info: denials counter;%ID219;A13
-;repeats@1;;Backline diagnostic info: repeats counter;%ID220;A13
-;RESERVED@1;;reserved;%ID221;A13
-;fail size@1;;Backline diagnostic info: packet size fails counter;%ID222;A13
-;fail frame@1;;Backline diagnostic info: packet frame fails counter;%ID223;A13
-;fail crc@1;;Backline diagnostic info: packet crc fails counter;%ID224;A13
-;fail UART@1;;Backline diagnostic info: UART fails counter;%ID225;A13
+;DI;;DI groups 1,2;%IB504;A12
+;Group1@1;;DI group 1;%IB504;A12
+Application.sys_di[32].di;DI1;;Тревога на площадке крана 388.7;%IX504.0;A12
+Application.sys_di[33].di;DI2;;Тревога в блок-боксе КП ТМ;%IX504.1;A12
+Application.sys_di[34].di;DI3;;Авария источника питания охранной сигнализации;%IX504.2;A12
+Application.sys_di[35].di;DI4;;Резерв;%IX504.3;A12
+Application.sys_di[36].di;DI5;;Резерв;%IX504.4;A12
+Application.sys_di[37].di;DI6;;Резерв;%IX504.5;A12
+Application.sys_di[38].di;DI7;;Резерв;%IX504.6;A12
+Application.sys_di[39].di;DI8;;Резерв;%IX504.7;A12
+;Group2@1;;DI group 2;%IB505;A12
+Application.sys_di[40].di;DI9;;Резерв;%IX505.0;A12
+Application.sys_di[41].di;DI10;;Резерв;%IX505.1;A12
+Application.sys_di[42].di;DI11;;Резерв;%IX505.2;A12
+Application.sys_di[43].di;DI12;;Резерв;%IX505.3;A12
+Application.sys_di[44].di;DI13;;Резерв;%IX505.4;A12
+Application.sys_di[45].di;DI14;;Резерв;%IX505.5;A12
+Application.sys_di[46].di;DI15;;Резерв;%IX505.6;A12
+Application.sys_di[47].di;DI16;;Резерв;%IX505.7;A12
+;BI;;Back indication groups 1,2;%IB506;A12
+;Group1@2;;Back indication group 1;%IB506;A12
+;DI1@1;;Unused;%IX506.0;A12
+;DI2@1;;Unused;%IX506.1;A12
+;DI3@1;;Unused;%IX506.2;A12
+;DI4@1;;Unused;%IX506.3;A12
+;DI5@1;;Unused;%IX506.4;A12
+;DI6@1;;Unused;%IX506.5;A12
+;DI7@1;;Unused;%IX506.6;A12
+;DI8@1;;Unused;%IX506.7;A12
+;Group2@2;;Back indication group 2;%IB507;A12
+;DI9@1;;Unused;%IX507.0;A12
+;DI10@1;;Unused;%IX507.1;A12
+;DI11@1;;Unused;%IX507.2;A12
+;DI12@1;;Unused;%IX507.3;A12
+;DI13@1;;Unused;%IX507.4;A12
+;DI14@1;;Unused;%IX507.5;A12
+;DI15@1;;Unused;%IX507.6;A12
+;DI16@1;;Unused;%IX507.7;A12
+;counters;;Counters data;%ID127;A12
+;counters[1];;Counters data;%ID127;A12
+;counters[2];;Counters data;%ID128;A12
+;counters[3];;Counters data;%ID129;A12
+;counters[4];;Counters data;%ID130;A12
+;counters[5];;Counters data;%ID131;A12
+;counters[6];;Counters data;%ID132;A12
+;counters[7];;Counters data;%ID133;A12
+;counters[8];;Counters data;%ID134;A12
+;counters[9];;Counters data;%ID135;A12
+;counters[10];;Counters data;%ID136;A12
+;counters[11];;Counters data;%ID137;A12
+;counters[12];;Counters data;%ID138;A12
+;counters[13];;Counters data;%ID139;A12
+;counters[14];;Counters data;%ID140;A12
+;counters[15];;Counters data;%ID141;A12
+;counters[16];;Counters data;%ID142;A12
+;DO_bi_err;;Back indication error, groups 1,2;%IB572;A12
+;Group1@3;;BI group 1;%IB572;A12
+Application.sys_do[0].fb_err;Bit0;;Кран № 388.7 открыть;%IX572.0;A12
+Application.sys_do[1].fb_err;Bit1;;Кран № 388.7 закрыть;%IX572.1;A12
+Application.sys_do[2].fb_err;Bit2;;Кран № 2 открыть (Резерв);%IX572.2;A12
+Application.sys_do[3].fb_err;Bit3;;Кран № 2 закрыть (Резерв);%IX572.3;A12
+Application.sys_do[4].fb_err;Bit4;;Резерв;%IX572.4;A12
+Application.sys_do[5].fb_err;Bit5;;Резерв;%IX572.5;A12
+Application.sys_do[6].fb_err;Bit6;;Резерв;%IX572.6;A12
+Application.sys_do[7].fb_err;Bit7;;Подготовка ТУ;%IX572.7;A12
+;Group2@3;;BI group 2;%IB573;A12
+Application.sys_do[8].fb_err;Bit0@1;;Резерв;%IX573.0;A12
+Application.sys_do[9].fb_err;Bit1@1;;Резерв;%IX573.1;A12
+Application.sys_do[10].fb_err;Bit2@1;;Резерв;%IX573.2;A12
+Application.sys_do[11].fb_err;Bit3@1;;Резерв;%IX573.3;A12
+Application.sys_do[12].fb_err;Bit4@1;;Резерв;%IX573.4;A12
+Application.sys_do[13].fb_err;Bit5@1;;Резерв;%IX573.5;A12
+Application.sys_do[14].fb_err;Bit6@1;;Резерв;%IX573.6;A12
+Application.sys_do[15].fb_err;Bit7@1;;Резерв;%IX573.7;A12
+Application.sys_mod[2].ok;online;;Online status;%IX574.0;A12
+;tx;;Count sended packets;%ID144;A12
+;rx;;Count received packets;%ID145;A12
+;rx_timeout;;Count not received packets;%ID146;A12
+;rx_error;;Count received packets with error;%ID147;A12
+;trans_error;;Received packets with unknown transaction number;%ID148;A12
+;type;;Module type;%ID149;A12
+;Service;;Service info;%ID150;A12
+;Diagnostic;;;%IW300;A12
+;Lights;;Indication LED's init error;%IX600.0;A12
+;Database;;Internal parameters database init error;%IX600.1;A12
+;USART;;USART interface init error;%IX600.2;A12
+;Flash;;External flash memory chip init error;%IX600.3;A12
+;USB;;USB interface init error;%IX600.4;A12
+;Bus address;;Module bus address init error;%IX600.5;A12
+;Reserved;;;%IX600.6;A12
+;Reserved@1;;;%IX600.7;A12
+;Reserved@2;;;%IX601.0;A12
+;Reserved@3;;;%IX601.1;A12
+;Reserved@4;;;%IX601.2;A12
+;Reserved@5;;;%IX601.3;A12
+;Reserved@6;;;%IX601.4;A12
+;Reserved@7;;;%IX601.5;A12
+;Reserved@8;;;%IX601.6;A12
+;Reserved@9;;;%IX601.7;A12
+;Module  specific;;;%IB602;A12
+;DO group 1 error;;DO group 1 hardware error;%IX602.0;A12
+;DO group 2 error;;DO group 2 hardware error;%IX602.1;A12
+;Reserved@10;;;%IX602.2;A12
+;Reserved@11;;;%IX602.3;A12
+;Groups 1,2 supply fail;;Groups 1,2 (DO1-DO16) has no supply voltage;%IX602.4;A12
+;Reserved@12;;;%IX602.5;A12
+;Reserved@13;;;%IX602.6;A12
+;Reserved@14;;;%IX602.7;A12
+;Unique id;;;%IB603;A12
+;Unique id[id];;;%IB603;A12
+;Unique id[id]@1;;;%IB604;A12
+;Unique id[id]@2;;;%IB605;A12
+;Unique id[id]@3;;;%IB606;A12
+;Unique id[id]@4;;;%IB607;A12
+;Unique id[id]@5;;;%IB608;A12
+;Unique id[id]@6;;;%IB609;A12
+;Unique id[id]@7;;;%IB610;A12
+;Unique id[id]@8;;;%IB611;A12
+;Unique id[id]@9;;;%IB612;A12
+;Unique id[id]@10;;;%IB613;A12
+;Unique id[id]@11;;;%IB614;A12
+;VNAR;;;%IB615;A12
+;VNAR[VNAR];;;%IB615;A12
+;VNAR[VNAR]@1;;;%IB616;A12
+;VNAR[VNAR]@2;;;%IB617;A12
+;VNAR[VNAR]@3;;;%IB618;A12
+;VNAR[VNAR]@4;;;%IB619;A12
+;VNAR[VNAR]@5;;;%IB620;A12
+;VNAR[VNAR]@6;;;%IB621;A12
+;VNAR[VNAR]@7;;;%IB622;A12
+;VNAR[VNAR]@8;;;%IB623;A12
+;VNAR[VNAR]@9;;;%IB624;A12
+;VNAR[VNAR]@10;;;%IB625;A12
+;VNAR[VNAR]@11;;;%IB626;A12
+;VNAR[VNAR]@12;;;%IB627;A12
+;VNAR[VNAR]@13;;;%IB628;A12
+;VNAR[VNAR]@14;;;%IB629;A12
+;VNAR[VNAR]@15;;;%IB630;A12
+;Module type;;;%ID158;A12
+;CRC of code;;;%IB636;A12
+;Byte0;;;%IB636;A12
+;Byte1;;;%IB637;A12
+;Byte2;;;%IB638;A12
+;Byte3;;;%IB639;A12
+;Soft version;;;%IB640;A12
+;Byte0@1;;;%IB640;A12
+;Byte1@1;;;%IB641;A12
+;Backline line1;;Backline line1 diagnostic;%ID161;A12
+;data rx;;Backline diagnostic info: rx counter;%ID161;A12
+;good packets;;Backline diagnostic info: good packets counter;%ID162;A12
+;bad packets;;Backline diagnostic info: bad packets counter;%ID163;A12
+;replies;;Backline diagnostic info: replies counter;%ID164;A12
+;denials;;Backline diagnostic info: denials counter;%ID165;A12
+;repeats;;Backline diagnostic info: repeats counter;%ID166;A12
+;RESERVED;;reserved;%ID167;A12
+;fail size;;Backline diagnostic info: packet size fails counter;%ID168;A12
+;fail frame;;Backline diagnostic info: packet frame fails counter;%ID169;A12
+;fail crc;;Backline diagnostic info: packet crc fails counter;%ID170;A12
+;fail UART;;Backline diagnostic info: UART fails counter;%ID171;A12
+;Backline line2;;Backline line2 diagnostic;%ID172;A12
+;data rx@1;;Backline diagnostic info: rx counter;%ID172;A12
+;good packets@1;;Backline diagnostic info: good packets counter;%ID173;A12
+;bad packets@1;;Backline diagnostic info: bad packets counter;%ID174;A12
+;replies@1;;Backline diagnostic info: replies counter;%ID175;A12
+;denials@1;;Backline diagnostic info: denials counter;%ID176;A12
+;repeats@1;;Backline diagnostic info: repeats counter;%ID177;A12
+;RESERVED@1;;reserved;%ID178;A12
+;fail size@1;;Backline diagnostic info: packet size fails counter;%ID179;A12
+;fail frame@1;;Backline diagnostic info: packet frame fails counter;%ID180;A12
+;fail crc@1;;Backline diagnostic info: packet crc fails counter;%ID181;A12
+;fail UART@1;;Backline diagnostic info: UART fails counter;%ID182;A12
+;AI;;Array of 16 AI signals;%IW366;A13
+Application.sys_ai[0].ai;AI[1];;Напряжение сетевого питания 220В;%IW366;A13
+Application.sys_ai[1].ai;AI[2];;Напряжение аккумуляторной батареи =24В;%IW367;A13
+Application.sys_ai[2].ai;AI[3];;Резерв;%IW368;A13
+Application.sys_ai[3].ai;AI[4];;Резерв;%IW369;A13
+Application.sys_ai[4].ai;AI[5];;Резерв;%IW370;A13
+Application.sys_ai[5].ai;AI[6];;Резерв;%IW371;A13
+Application.sys_ai[6].ai;AI[7];;Резерв;%IW372;A13
+Application.sys_ai[7].ai;AI[8];;Резерв;%IW373;A13
+Application.sys_ai[8].ai;AI[9];;Температура газа после крана № 388.7;%IW374;A13
+Application.sys_ai[9].ai;AI[10];;Температура грунта;%IW375;A13
+Application.sys_ai[10].ai;AI[11];;Давление газа до крана № 388.7;%IW376;A13
+Application.sys_ai[11].ai;AI[12];;Давление газа после крана № 388.7;%IW377;A13
+Application.sys_ai[12].ai;AI[13];;Давление газа в аккумуляторе импульчного газа;%IW378;A13
+Application.sys_ai[13].ai;AI[14];;Температура воздуха в блок-боксе КП ТМ;%IW379;A13
+Application.sys_ai[14].ai;AI[15];;Температура наружнего воздуха;%IW380;A13
+Application.sys_ai[15].ai;AI[16];;Резерв;%IW381;A13
+;AI_temp;;Device temperature;%IW382;A13
+;AI_calib;;Calibration state;%IB766;A13
+;Group1;;Calibration state of AI group 1 channels;%IB766;A13
+;Channel 1;;Напряжение сетевого питания 220В;%IX766.0;A13
+;Channel 2;;Напряжение аккумуляторной батареи =24В;%IX766.1;A13
+;Channel 3;;Резерв;%IX766.2;A13
+;Channel 4;;Резерв;%IX766.3;A13
+;Channel 5;;Резерв;%IX766.4;A13
+;Channel 6;;Резерв;%IX766.5;A13
+;Channel 7;;Резерв;%IX766.6;A13
+;Channel 8;;Резерв;%IX766.7;A13
+;Group2;;Calibration state of AI group 2 channels;%IB767;A13
+;Channel 9;;Температура газа после крана № 388.7;%IX767.0;A13
+;Channel 10;;Температура грунта;%IX767.1;A13
+;Channel 11;;Давление газа до крана № 388.7;%IX767.2;A13
+;Channel 12;;Давление газа после крана № 388.7;%IX767.3;A13
+;Channel 13;;Давление газа в аккумуляторе импульчного газа;%IX767.4;A13
+;Channel 14;;Температура воздуха в блок-боксе КП ТМ;%IX767.5;A13
+;Channel 15;;Температура наружнего воздуха;%IX767.6;A13
+;Channel 16;;Резерв;%IX767.7;A13
+;Reserved;;Reserved;%IB768;A13
+;Channel 17;;Unused;%IX768.0;A13
+;Channel 18;;Unused;%IX768.1;A13
+;Channel 19;;Unused;%IX768.2;A13
+;Channel 20;;Unused;%IX768.3;A13
+;Channel 21;;Unused;%IX768.4;A13
+;Channel 22;;Unused;%IX768.5;A13
+;Channel 23;;Unused;%IX768.6;A13
+;Channel 24;;Unused;%IX768.7;A13
+;Reserved@1;;Reserved;%IB769;A13
+;Channel 25;;Unused;%IX769.0;A13
+;Channel 26;;Unused;%IX769.1;A13
+;Channel 27;;Unused;%IX769.2;A13
+;Channel 28;;Unused;%IX769.3;A13
+;Channel 29;;Unused;%IX769.4;A13
+;Channel 30;;Unused;%IX769.5;A13
+;Channel 31;;Unused;%IX769.6;A13
+;Channel 32;;Unused;%IX769.7;A13
+Application.sys_mod[3].ok;online;;Online status;%IX770.0;A13
+;tx;;Count sended packets;%ID193;A13
+;rx;;Count received packets;%ID194;A13
+;rx_timeout;;Count not received packets;%ID195;A13
+;rx_error;;Count received packets with error;%ID196;A13
+;trans_error;;Received packets with unknown transaction number;%ID197;A13
+;type;;Module type;%ID198;A13
+;Service;;Service info;%ID199;A13
+;Diagnostic;;;%IW398;A13
+;Lights;;Indication LED's init error;%IX796.0;A13
+;Database;;Internal parameters database init error;%IX796.1;A13
+;USART;;USART interface init error;%IX796.2;A13
+;Flash;;External flash memory chip init error;%IX796.3;A13
+;USB;;USB interface init error;%IX796.4;A13
+;Bus address;;Module bus address init error;%IX796.5;A13
+;Reserved@2;;;%IX796.6;A13
+;Reserved@3;;;%IX796.7;A13
+;Reserved@4;;;%IX797.0;A13
+;Reserved@5;;;%IX797.1;A13
+;Reserved@6;;;%IX797.2;A13
+;Reserved@7;;;%IX797.3;A13
+;Reserved@8;;;%IX797.4;A13
+;Reserved@9;;;%IX797.5;A13
+;Reserved@10;;;%IX797.6;A13
+;Reserved@11;;;%IX797.7;A13
+;Module  specific;;;%IB798;A13
+;Service mode on;;Service mode flag;%IX798.0;A13
+;ADC1 error;;ADC1 init fault;%IX798.1;A13
+;ADC2 error;;ADC2 init fault;%IX798.2;A13
+;ADC3 error;;ADC3 init fault;%IX798.3;A13
+;ADC4 error;;ADC4 init fault;%IX798.4;A13
+;Calib error;;Calibration error: wrong calibration coefficients;%IX798.5;A13
+;Group error;;Group error: wrong group resistors;%IX798.6;A13
+;Reserved@12;;;%IX798.7;A13
+;Unique id;;;%IB799;A13
+;Unique id[id];;;%IB799;A13
+;Unique id[id]@1;;;%IB800;A13
+;Unique id[id]@2;;;%IB801;A13
+;Unique id[id]@3;;;%IB802;A13
+;Unique id[id]@4;;;%IB803;A13
+;Unique id[id]@5;;;%IB804;A13
+;Unique id[id]@6;;;%IB805;A13
+;Unique id[id]@7;;;%IB806;A13
+;Unique id[id]@8;;;%IB807;A13
+;Unique id[id]@9;;;%IB808;A13
+;Unique id[id]@10;;;%IB809;A13
+;Unique id[id]@11;;;%IB810;A13
+;VNAR;;;%IB811;A13
+;VNAR[VNAR];;;%IB811;A13
+;VNAR[VNAR]@1;;;%IB812;A13
+;VNAR[VNAR]@2;;;%IB813;A13
+;VNAR[VNAR]@3;;;%IB814;A13
+;VNAR[VNAR]@4;;;%IB815;A13
+;VNAR[VNAR]@5;;;%IB816;A13
+;VNAR[VNAR]@6;;;%IB817;A13
+;VNAR[VNAR]@7;;;%IB818;A13
+;VNAR[VNAR]@8;;;%IB819;A13
+;VNAR[VNAR]@9;;;%IB820;A13
+;VNAR[VNAR]@10;;;%IB821;A13
+;VNAR[VNAR]@11;;;%IB822;A13
+;VNAR[VNAR]@12;;;%IB823;A13
+;VNAR[VNAR]@13;;;%IB824;A13
+;VNAR[VNAR]@14;;;%IB825;A13
+;VNAR[VNAR]@15;;;%IB826;A13
+;Module type;;;%ID207;A13
+;CRC of code;;;%IB832;A13
+;Byte0;;;%IB832;A13
+;Byte1;;;%IB833;A13
+;Byte2;;;%IB834;A13
+;Byte3;;;%IB835;A13
+;Soft version;;;%IB836;A13
+;Byte0@1;;;%IB836;A13
+;Byte1@1;;;%IB837;A13
+;Backline line1;;Backline line1 diagnostic;%ID210;A13
+;data rx;;Backline diagnostic info: rx counter;%ID210;A13
+;good packets;;Backline diagnostic info: good packets counter;%ID211;A13
+;bad packets;;Backline diagnostic info: bad packets counter;%ID212;A13
+;replies;;Backline diagnostic info: replies counter;%ID213;A13
+;denials;;Backline diagnostic info: denials counter;%ID214;A13
+;repeats;;Backline diagnostic info: repeats counter;%ID215;A13
+;RESERVED;;reserved;%ID216;A13
+;fail size;;Backline diagnostic info: packet size fails counter;%ID217;A13
+;fail frame;;Backline diagnostic info: packet frame fails counter;%ID218;A13
+;fail crc;;Backline diagnostic info: packet crc fails counter;%ID219;A13
+;fail UART;;Backline diagnostic info: UART fails counter;%ID220;A13
+;Backline line2;;Backline line2 diagnostic;%ID221;A13
+;data rx@1;;Backline diagnostic info: rx counter;%ID221;A13
+;good packets@1;;Backline diagnostic info: good packets counter;%ID222;A13
+;bad packets@1;;Backline diagnostic info: bad packets counter;%ID223;A13
+;replies@1;;Backline diagnostic info: replies counter;%ID224;A13
+;denials@1;;Backline diagnostic info: denials counter;%ID225;A13
+;repeats@1;;Backline diagnostic info: repeats counter;%ID226;A13
+;RESERVED@1;;reserved;%ID227;A13
+;fail size@1;;Backline diagnostic info: packet size fails counter;%ID228;A13
+;fail frame@1;;Backline diagnostic info: packet frame fails counter;%ID229;A13
+;fail crc@1;;Backline diagnostic info: packet crc fails counter;%ID230;A13
+;fail UART@1;;Backline diagnostic info: UART fails counter;%ID231;A13

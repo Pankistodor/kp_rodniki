@@ -390,3 +390,58 @@ c_nc := ADRBASE_NC_DEVICE;
     c_nc := c_nc + i;
 {END_IF}
 
+{IF defined (variable: ek.ts)}
+    i := 0; WHILE i < ek.count_ts DO
+        iecDB_ts[c_ts + i] := ek.ts[i];
+        i := i + 1;
+    END_WHILE
+    c_ts := c_ts + i;
+{END_IF}
+{IF defined (variable: ek.te)}
+    i := 0; WHILE i < ek.count_te DO
+        iecDB_te[c_te + i] := ek.te[i];
+        i := i + 1;
+    END_WHILE
+    c_te := c_te + i;
+{END_IF}
+{IF defined (variable: ek.tf)}
+    i := 0; WHILE i < ek.count_tf DO
+        iecDB_tf[c_tf + i] := ek.tf[i];
+        i := i + 1;
+    END_WHILE
+    c_tf := c_tf + i;
+{END_IF}
+{IF defined (variable: ek.cmd)}
+    i := 0; WHILE i < ek.count_cmd DO
+        IF iecDB_tu_act[c_cmd + i] THEN
+            iecDB_tu_act[c_cmd + i] := FALSE;
+            ek.cmd[i].run := TRUE;
+            ek.cmd[i].value.spb := iecDB_tu[c_cmd + i];
+        END_IF
+        i := i + 1;
+    END_WHILE
+    c_cmd := c_cmd + i;
+{END_IF}
+{IF defined (variable: ek.nb)}
+    i := 0; WHILE i < ek.count_nb DO
+        IF iecDB_tri_act[c_nb + i] THEN
+            iecDB_tri_act[c_nb + i] := FALSE;
+            ek.nb[i].run := TRUE;
+            ek.nb[i].value.spi := iecDB_tri[c_nb + i];
+        END_IF
+        i := i + 1;
+    END_WHILE
+    c_nb := c_nb + i;
+{END_IF}
+{IF defined (variable: ek.nc)}
+    i := 0; WHILE i < ek.count_nc DO
+        IF iecDB_trf_act[c_nc + i] THEN
+            iecDB_trf_act[c_nc + i] := FALSE;
+            ek.nc[i].run := TRUE;
+            ek.nc[i].value.spr := iecDB_trf[c_nc + i];
+        END_IF
+        i := i + 1;
+    END_WHILE
+    c_nc := c_nc + i;
+{END_IF}
+

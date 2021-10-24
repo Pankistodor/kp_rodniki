@@ -65,18 +65,18 @@
     sys_ai[14].fail := NOT sys_mod[3].ok;
     sys_ai[15].fail := NOT sys_mod[3].ok;
     
-    sys_valve[0].in.di_dist := TRUE;
+    sys_valve[0].in.di_dist := sys_di[13].ts;
     sys_valve[0].in.di_open := sys_di[0].ts;
     sys_valve[0].in.di_close := sys_di[1].ts;
-    sys_valve[0].in.di_cv := TRUE;
+    sys_valve[0].in.di_cv := sys_di[12].ts;
     sys_valve[0].in.sol_open := sys_di[2].ts;
     sys_valve[0].in.sol_close := sys_di[3].ts;
-    sys_valve[1].in.di_dist := TRUE;
-    sys_valve[1].in.di_open := sys_di[0].ts;
-    sys_valve[1].in.di_close := sys_di[1].ts;
-    sys_valve[1].in.di_cv := TRUE;
-    sys_valve[1].in.sol_open := sys_di[2].ts;
-    sys_valve[1].in.sol_close := sys_di[3].ts;
+    sys_valve[1].in.di_dist := sys_di[13].ts;
+    sys_valve[1].in.di_open := sys_di[4].ts;
+    sys_valve[1].in.di_close := sys_di[5].ts;
+    sys_valve[1].in.di_cv := sys_di[12].ts;
+    sys_valve[1].in.sol_open := sys_di[6].ts;
+    sys_valve[1].in.sol_close := sys_di[7].ts;
     
     
     
