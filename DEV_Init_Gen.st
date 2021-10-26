@@ -1,7 +1,7 @@
     skp.node := 1;
     skp.pMaster := ADR(modbus_rs[0]);
     skp.Init();
-    akp.node := 2;
+    akp.node := 1;
     akp.pMaster := ADR(modbus_ip[0]);
     akp.Init();
     vopetm.node := 1;
@@ -10,7 +10,7 @@
     mercury.node := 1;
     mercury.pMaster := ADR(modbus_rs[2]);
     mercury.Init();
-    ngk_ipkz_xn.node := 2;
+    ngk_ipkz_xn.node := 1;
     ngk_ipkz_xn.pMaster := ADR(modbus_rs[3]);
     ngk_ipkz_xn.Init();
     eris.node := 1;

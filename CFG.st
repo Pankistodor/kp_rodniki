@@ -41,8 +41,8 @@
     COUNT_EXTRA_NB: UINT := 32;
     COUNT_EXTRA_NC: UINT := 32;
     // Объем БД для устройств (вычисленный)
-    COUNT_DEVICE_TS: UINT := 167;
-    COUNT_DEVICE_TE: UINT := 63;
+    COUNT_DEVICE_TS: UINT := 183;
+    COUNT_DEVICE_TE: UINT := 69;
     COUNT_DEVICE_TF: UINT := 88;
     COUNT_DEVICE_CMD: UINT := 77;
     COUNT_DEVICE_NB: UINT := 0;

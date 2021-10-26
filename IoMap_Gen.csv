@@ -371,10 +371,10 @@ Application.sys_ai[0].ai;AI[1];;Напряжение сетевого питан
 Application.sys_ai[1].ai;AI[2];;Напряжение аккумуляторной батареи =24В;%IW367;A13
 Application.sys_ai[2].ai;AI[3];;Резерв;%IW368;A13
 Application.sys_ai[3].ai;AI[4];;Резерв;%IW369;A13
-Application.sys_ai[4].ai;AI[5];;Резерв;%IW370;A13
-Application.sys_ai[5].ai;AI[6];;Резерв;%IW371;A13
-Application.sys_ai[6].ai;AI[7];;Резерв;%IW372;A13
-Application.sys_ai[7].ai;AI[8];;Резерв;%IW373;A13
+Application.sys_ai[4].ai;AI[5];;Шунт;%IW370;A13
+Application.sys_ai[5].ai;AI[6];;Потенциал трубы;%IW371;A13
+Application.sys_ai[6].ai;AI[7];;Напряжение СКЗ;%IW372;A13
+Application.sys_ai[7].ai;AI[8];;Термосопротивление;%IW373;A13
 Application.sys_ai[8].ai;AI[9];;Температура газа после крана № 388.7;%IW374;A13
 Application.sys_ai[9].ai;AI[10];;Температура грунта;%IW375;A13
 Application.sys_ai[10].ai;AI[11];;Давление газа до крана № 388.7;%IW376;A13
@@ -390,10 +390,10 @@ Application.sys_ai[15].ai;AI[16];;Резерв;%IW381;A13
 ;Channel 2;;Напряжение аккумуляторной батареи =24В;%IX766.1;A13
 ;Channel 3;;Резерв;%IX766.2;A13
 ;Channel 4;;Резерв;%IX766.3;A13
-;Channel 5;;Резерв;%IX766.4;A13
-;Channel 6;;Резерв;%IX766.5;A13
-;Channel 7;;Резерв;%IX766.6;A13
-;Channel 8;;Резерв;%IX766.7;A13
+;Channel 5;;Шунт;%IX766.4;A13
+;Channel 6;;Потенциал трубы;%IX766.5;A13
+;Channel 7;;Напряжение СКЗ;%IX766.6;A13
+;Channel 8;;Термосопротивление;%IX766.7;A13
 ;Group2;;Calibration state of AI group 2 channels;%IB767;A13
 ;Channel 9;;Температура газа после крана № 388.7;%IX767.0;A13
 ;Channel 10;;Температура грунта;%IX767.1;A13
